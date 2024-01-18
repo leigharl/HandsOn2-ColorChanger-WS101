@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-       body{
+        body {
             background-image: url(https://www.shutterstock.com/image-illustration/pink-black-abstract-background-600nw-428393929.jpg);
             background-repeat: no-repeat;
             background-position: center;
@@ -15,20 +16,20 @@
             padding-top: 100px;
             color: palevioletred;
         }
-        button{
+        #kulay {
+            background-color: pink;
+            width: 200px;
+            height: 200px;
+            border-radius: 360px;
+            margin-left: 650px;
+        }
+        button {
             height: 50px;
             width: 100px;
             background-color: palevioletred;
             font-weight: bolder;
             font-size: 18px;
             color: rgb(145, 30, 68);
-        }
-        div{
-            background-color: #E30B5C;
-            width: 200px;
-            height: 200px;
-            border-radius: 360px;
-            margin-left: 650px;
         }
     </style>
 </head>
@@ -40,17 +41,16 @@
     <script>
         const kulay = document.getElementById("kulay");
         let btn = document.getElementById("btn");
-    
-        btn.addEventListener('click', myFunction);
-    
-        function myFunction() {
-            if (kulay.style.backgroundColor === "#E30B5C") {
-                kulay.style.backgroundColor = "pink";
+
+        btn.addEventListener('click', changeColor);
+
+        function changeColor() {
+            if (kulay.style.backgroundColor === "pink") {
+                kulay.style.backgroundColor = "gray";
             } else {
-                kulay.style.backgroundColor = "#E30B5C";
+                kulay.style.backgroundColor = "pink";
             }
         }
     </script>
-    
 </body>
 </html>
