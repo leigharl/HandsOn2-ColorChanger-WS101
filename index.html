@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+            background-image: url(https://www.shutterstock.com/image-illustration/pink-black-abstract-background-600nw-428393929.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+            height: 90vh;
+            padding-top: 100px;
+            color: palevioletred;
+        }
+        button{
+            height: 50px;
+            width: 100px;
+            background-color: palevioletred;
+            font-weight: bolder;
+            font-size: 18px;
+            color: rgb(145, 30, 68);
+        }
+        div{
+            background-color: #E30B5C;
+            width: 200px;
+            height: 200px;
+            border-radius: 360px;
+            margin-left: 650px;
+        }
+    </style>
+</head>
+<body>
+    <h1  style="font-size: 50px;">JavaScript colorChanger() Hands-on.</h1>
+    <div id="kulay"></div><br>
+    <button id="btn">Click Me</button>
+
+    <script>
+        const kulay = document.getElementById("kulay");
+        let btn = document.getElementById("btn");
+    
+        btn.addEventListener('click', myFunction);
+    
+        function myFunction() {
+            if (kulay.style.backgroundColor === "#E30B5C") {
+                kulay.style.backgroundColor = "pink";
+            } else {
+                kulay.style.backgroundColor = "#E30B5C";
+            }
+        }
+    </script>
+    
+</body>
+</html>
